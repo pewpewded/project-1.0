@@ -1,0 +1,17 @@
+{
+  "name": "project-1.0",
+  "version": "1.0.0",
+  "description": "A Website Made as a Semester Project for a Web Design Course",
+  "scripts": {
+    "watch": "tailwindcss -i ./src/assets/css/input.css -o ./dist/output.css --watch",
+    "build": "tailwindcss -i ./src/assets/css/input.css -o ./dist/output.css",
+    "deploy": "tailwindcss -i ./src/assets/css/input.css -o ./dist/output.css --minify"
+  },
+  "author": "Khalil Melhem",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^2.8.1",
+    "prettier-plugin-tailwindcss": "^0.2.1",
+    "tailwindcss": "^3.2.4"
+  }
+}

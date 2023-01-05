@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project-1.0</title>
+    <link href="../dist/output.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="../public/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body class="background flex flex-col text-neutral-900 dark:text-neutral-200">
+    <main class="h-screen snap-y snap-mandatory overflow-y-scroll">
+      <!-- Welcome Page -->
+      <section>
+        <h1 class="p-6 text-4xl font-bold leading-relaxed sm:text-7xl">
+          Welcome to Our Website!
+        </h1>
+        <p class="p-6 text-lg font-bold leading-relaxed sm:text-3xl">
+          This Is Our Submission for the CIS 201 Semester Project
+        </p>
+        <ul class="justify-end p-6 text-xl font-bold lg:flex">
+          <li class="p-3 hover:scale-105">
+            <a href="#SomeThing">What Do We Do?</a>
+          </li>
+          <li class="p-3 hover:scale-105"><a href="#our-team">Our Team</a></li>
+          <li class="p-3 hover:scale-105">
+            <a href="#contact-us">Contact Us!</a>
+          </li>
+        </ul>
+        <!-- Dark/Light Mode Button -->
+        <button
+          id="theme-toggle"
+          type="button"
+          class="rounded-lg p-5 hover:scale-105 focus:outline-none"
+        >
+          <!-- Moon Icon -->
+          <img
+            id="dark-icon"
+            class="hidden h-12 w-12"
+            alt="Moon Icon"
+            src="./assets/imgs/moonIcon.svg"
+          />
+          <!-- Sun Icon -->
+          <img
+            id="light-icon"
+            class="hidden h-12 w-12"
+            alt="Sun Icon"
+            src="./assets/imgs/sunIcon.svg"
+          />
+        </button>
+      </section>
+      <!-- SomeThing -->
+      <section class="snap-align-none md:snap-center" id="SomeThing">
+        <h2 class="mb-2 w-full text-5xl font-semibold leading-tight">
+          SomeThing:
+        </h2>
+        <div
+          class="mx-auto my-2 h-1 w-72 rounded-t bg-gray-400 dark:bg-gray-700"
+        ></div>
+        <div class="grid gap-5 p-10 md:grid-cols-3">
+          <!-- First Box -->
+          <div class="customBox">
+            <div class="w-full text-2xl font-semibold">Smth One</div>
+            <p class="font-medium leading-7">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+              elit purus, maximus non metus dignissim, viverra iaculis lectus.
+              Proin ac nisl sit amet nibh faucibus luctus. Ut in fermentum enim.
+            </p>
+            <button class="customButton">Click Here To!</button>
+          </div>
+          <!-- Second Box -->
+          <div class="customBox">
+            <div class="w-full text-2xl font-semibold">Smth Two</div>
+            <p class="font-medium leading-7">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+              elit purus, maximus non metus dignissim, viverra iaculis lectus.
+              Proin ac nisl sit amet nibh faucibus luctus. Ut in fermentum enim.
+            </p>
+            <button class="customButton">Click Here To!</button>
+          </div>
+          <!-- Third Box -->
+          <div class="customBox">
+            <div class="w-full text-2xl font-semibold">Smth Three</div>
+            <p class="font-medium leading-7">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+              elit purus, maximus non metus dignissim, viverra iaculis lectus.
+              Proin ac nisl sit amet nibh faucibus luctus. Ut in fermentum enim.
+            </p>
+            <button class="customButton">Click Here To!</button>
+          </div>
+        </div>
+      </section>
+      <!-- Our Team -->
+      <section id="our-team" class="fill-current">
+        <div class="w-full sm:mb-7">
+          <h2 class="w-full text-4xl font-semibold leading-relaxed sm:text-6xl">
+            Our Team
+          </h2>
+          <p class="w-full p-6 text-xl font-normal dark:text-dimWhite">
+            The Team Who Won the War and Submitted Before the Deadline
+          </p>
+        </div>
+        <div class="grid gap-1 md:grid-cols-2">
+          <!-- Person One -->
+          <div class="our-team-box">
+            <!-- Quotes -->
+            <svg
+              viewBox="0.398438 0 42.6 27.6"
+              class="h-10 w-10 object-contain"
+            >
+              <path
+                d="M11.7984 27.6L18.9984 0H12.3984L0.398438 27.6H11.7984ZM35.7984 27.6L42.9984 0H36.3984L24.3984 27.6H35.7984Z"
+              />
+            </svg>
+            <p class="my-4 text-lg font-normal leading-8">
+              Loves Shawarma and Cats.
+            </p>
+            <div class="flex flex-row">
+              <img src="./assets/imgs/pfp.jpg" class="h-12 w-12 rounded-full" />
+              <div class="ml-4 flex flex-col">
+                <h4 class="text-xl font-semibold leading-8">Khalid Kashmiri</h4>
+                <p class="text-base font-normal leading-6">Best Friend</p>
+              </div>
+            </div>
+          </div>
+          <!-- Person Two -->
+          <div class="our-team-box">
+            <!-- Quotes -->
+            <svg
+              viewBox="0.398438 0 42.6 27.6"
+              class="h-10 w-10 object-contain"
+            >
+              <path
+                d="M11.7984 27.6L18.9984 0H12.3984L0.398438 27.6H11.7984ZM35.7984 27.6L42.9984 0H36.3984L24.3984 27.6H35.7984Z"
+              />
+            </svg>
+            <p class="my-4 text-lg font-normal leading-8">
+              Making This Website Was a <br />
+              Roller Coaster of Emotions.
+            </p>
+            <div class="flex flex-row">
+              <img
+                src="./assets/imgs/upsidedown-pfp.png"
+                class="h-12 w-12 rounded-full"
+              />
+              <div class="ml-4 flex flex-col">
+                <h4 class="text-xl font-semibold leading-8">Khalil Melhem</h4>
+                <p class="text-base font-normal leading-6">I Made This</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Us -->
+      <section id="contact-us" class="snap-align-none">
+        <div class="container flex flex-wrap px-5 sm:flex-nowrap">
+          <!-- Map -->
+          <div
+            class="relative flex flex-grow snap-center items-end justify-center rounded-lg p-10 sm:mr-10 md:w-1/2 md:snap-align-none lg:w-2/3"
+          >
+            <iframe
+              class="absolute inset-0"
+              title="map"
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%D8%AC%D8%A7%D9%85%D8%B9%D8%A9%20%D8%A7%D9%84%D9%8A%D9%85%D8%A7%D9%85%D8%A9+(hi)&amp;t=k&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              style="filter: grayscale(1) contrast(1.2) opacity(0.4)"
+            ></iframe>
+            <div
+              class="relative flex flex-wrap rounded bg-gray-400 py-6 shadow-lg dark:bg-gray-700"
+            >
+              <div class="px-6">
+                <h2 class="text-sm font-semibold tracking-widest">Address</h2>
+                <p>Jose Mourinho – If I Speak I’m in Big Trouble</p>
+              </div>
+            </div>
+          </div>
+          <!-- Contact Form -->
+          <form
+            action="#"
+            class="mt-8 flex w-full flex-col rounded md:ml-auto md:mt-0 md:w-1/2 md:py-8 lg:w-1/3"
+          >
+            <h2 class="mb-1 text-3xl font-bold">Contact Us</h2>
+            <p class="mb-5 text-xl leading-relaxed dark:text-dimWhite">
+              Feel Free To Reach Out To Us!
+            </p>
+            <div class="relative mb-4">
+              <label for="name" class="text-lg leading-7">Name:</label>
+              <input
+                id="name"
+                type="text"
+                required="required"
+                class="customForm"
+              />
+            </div>
+            <div class="relative mb-4">
+              <label for="email" class="text-lg leading-7">Email:</label>
+              <input
+                id="email"
+                type="email"
+                required="required"
+                class="customForm"
+              />
+            </div>
+            <div class="relative mb-4">
+              <label for="message" class="text-lg leading-7">Message:</label>
+              <textarea
+                id="message"
+                required="required"
+                class="customForm h-32 resize-none leading-6"
+              ></textarea>
+            </div>
+            <button class="customButton">Send</button>
+            <p class="mt-3 text-xs text-gray-500">
+              The button doesn't actually work lol.
+            </p>
+          </form>
+        </div>
+        <!-- Footer -->
+        <footer
+          class="snap-center p-6 text-2xl font-bold hover:scale-105 sm:mt-6"
+        >
+          <a href="#our-team" class="">Made With ❤️ By Me</a>
+        </footer>
+      </section>
+    </main>
+    <script src="./assets/js/dark-mode.js"></script>
+  </body>
+</html>
